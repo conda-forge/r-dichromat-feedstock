@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: generic
-  number: 2000
+  number: 2001
 
   rpaths:
     - lib/R/lib/
@@ -43,5 +43,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/r
     - johanneskoester
     - bgruening
