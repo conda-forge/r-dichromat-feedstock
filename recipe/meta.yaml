@@ -1,4 +1,4 @@
-{% set version = '2.0-0' %}
+{% set version = "2.0-0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: generic
-  number: 2001
+  number: 2002
 
   rpaths:
     - lib/R/lib/
@@ -36,11 +36,12 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=dichromat
-  license: GPL-2
-  summary: Collapse red-green or green-blue distinctions to simulate the effects of different
-    types of color-blindness.
+  license: GPL-2.0-only
+  summary: Collapse red-green or green-blue distinctions to simulate the effects of different types of color-blindness.
   license_family: GPL2
 
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 extra:
   recipe-maintainers:
     - conda-forge/r
