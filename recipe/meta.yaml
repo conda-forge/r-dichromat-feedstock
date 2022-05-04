@@ -1,4 +1,4 @@
-{% set version = "2.0-0" %}
+{% set version = "2.0-0.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/dichromat_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/dichromat/dichromat_{{ version }}.tar.gz
-  sha256: 31151eaf36f70bdc1172da5ff5088ee51cc0a3db4ead59c7c38c25316d580dd1
+  sha256: a10578e9ad8a581bd8fe0d8a8370051f3cdcf12c7d282f3af2a18dacda566081
 
 build:
   noarch: generic
-  number: 2002
+  number: 0
 
   rpaths:
     - lib/R/lib/
