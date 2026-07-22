@@ -4,7 +4,7 @@
 
 package:
   name: r-dichromat
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace('-', '_') }}"
 
 source:
   fn: dichromat_{{ version }}.tar.gz
