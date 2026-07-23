@@ -1,21 +1,21 @@
-{% set version = "2.0-0.1" %}
+{% set version = "2.0-1" %}
 
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-dichromat
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace('-', '_') }}"
 
 source:
   fn: dichromat_{{ version }}.tar.gz
   url:
     - https://cran.r-project.org/src/contrib/dichromat_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/dichromat/dichromat_{{ version }}.tar.gz
-  sha256: a10578e9ad8a581bd8fe0d8a8370051f3cdcf12c7d282f3af2a18dacda566081
+  sha256: 19375b11583bc45bc4710c4435cf1232aa1fd8fdd8746f3997f5fb98c792d95a
 
 build:
   noarch: generic
-  number: 4
+  number: 0
 
   rpaths:
     - lib/R/lib/
